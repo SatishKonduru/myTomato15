@@ -1,0 +1,49 @@
+<div class="container-fluid page">
+
+  <div class="d-flex page_box p-3 mt-2">
+    <h1>Selected Food Item</h1>
+  </div>
+  <div class="page_content shadow p-3 position-relative">
+    <div class="page_content-data position-absolute" >
+
+   <div class="container" *ngFor= "let x of selectedFood">
+    <img src="{{x.imageUrl}}" class="card-img">
+    <div class="details">
+      <div class="header">
+        <span class="name">
+          <strong>{{x.name}}</strong>
+        </span>
+        <span class="favorite {{x.favorite?'visible':'invisible'}}">
+          ❤️
+        </span>
+      </div>
+      <div class="star">
+        <star-rating
+              [value]="'{{x.stars}}'"
+              [totalstars]="5"
+              checkedcolor="red"
+              uncheckedcolor="black"
+              size="24px"
+              [readonly]="false" ></star-rating>
+      </div>
+      <div class="cookTime">
+        <span>
+          Time to Cook: 🕥 <strong>{{x.cookTime}}mins</strong>
+        </span>
+      </div>
+      <div class="price">
+        <span>
+          Price: <strong>{{x.price | currency: 'INR'}}/-</strong>
+        </span>
+      </div>
+      <button mat-raised-button color="my-primary" (click)="addToCart()">Add to Cart</button>
+     </div>
+   </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,38 @@
+<div class="container-fluid page">
+  <div class="d-flex page_box p-3 mt-2">
+    <h1>Register</h1>
+  </div>
+  <div class="page_content shadow p-3 position-relative">
+    <div class="row pt-2">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-header" style="background-color: #ff1a1a;">
+            <h3 style="color: #fff;">Register</h3>
+          </div>
+          <div class="card-body">
+            <form class="form">
+              <div class="form-group">
+                <p>
+                  <mat-form-field style="width: 100%" >
+                    <mat-label style="color: #000;">Username: </mat-label>
+                    <input matInput type="text" [(ngModel)]="registerUserData.username">
+                  </mat-form-field>
+                </p>
+                <p>
+                  <mat-form-field style="width: 100%">
+                    <mat-label style="color: #000;">Password: </mat-label>
+                    <input matInput type="password" [(ngModel)]="registerUserData.password" [type]="showPassword? 'text' : 'password'">
+                    <mat-icon matSuffix (click)="togglePasswordVisibility()" style="cursor: pointer; color:#ff1a1a">
+                    {{showPassword?'visibility_off':'visibility'}}</mat-icon>
+                  </mat-form-field>
+                </p>
+              </div>
+              <button mat-raised-button color="my-primary" (click)="registerUser()">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

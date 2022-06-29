@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tomatoApp';
+  public sideBarOpen = true
+  sidenavWidth = 18;
+
+  sideBarToggler(){
+    this.sideBarOpen = !this.sideBarOpen
+
+  }
+
+
+
 }

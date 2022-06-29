@@ -1,0 +1,46 @@
+<div class="container-fluid page">
+  <div class="d-flex page_box p-3 mt-2">
+   <h1>Breakfast</h1>
+  </div>
+  <div class="page_content shadow p-3 position-relative">
+    <!-- <div class="page_content-data position-absolute">
+      <div class="heading">
+        Breakfast
+      </div>
+    </div> -->
+    <div class="row mt-5">
+     <div class="col-md-4 md-3" *ngFor="let x of breakfast">
+
+
+        <div class="card text-center" routerLink='/food/{{x.id}}'>
+          <div class="card-title text-center" style="color:#ff1a1a; font-weight:bold">
+             {{x.name}}
+            </div>
+           <div class="card-body">
+            <img src="{{x.imageUrl}}" class="card-img">
+
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class=" {{x.favorite?'visible':'invisible'}}">❤️  </span>
+              <star-rating
+              [value]="x.stars"
+              [totalstars]="5"
+              checkedcolor="red"
+              uncheckedcolor="black"
+              size="24px"
+              [readonly]="false" ></star-rating>
+            </div>
+
+
+            <div class="d-flex justify-content-between">
+              <span>🕥    {{x.cookTime}}mins </span>
+              <span style="color: #ff1a1a; font-weight: bold; " > {{x.price | currency:'INR'}} /-</span>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+</div>
+

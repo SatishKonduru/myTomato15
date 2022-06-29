@@ -1,0 +1,60 @@
+<div class="container-fluid page">
+
+  <div class="d-flex page_box p-3 mt-2 justify-content-between">
+    <h1>Home</h1>
+    <div class="mySearch ">
+      <mat-form-field  class="mySearchFormField" color="`primary">
+        <mat-label>Search</mat-label>
+        <input matInput [(ngModel)]="searchKey" autocomplete="off" (change)="applyFilter()"  >
+        <button matSuffix mat-icon-button *ngIf="searchKey" (click)="onSearchClear()">
+
+          <mat-icon>close</mat-icon>
+        </button>
+ </mat-form-field>
+ <span>
+  <button mat-flat-button  (click)="applyFilter()">Search</button>
+</span>
+    </div>
+
+  </div>
+
+  <div class="page_content shadow p-3 position-relative">
+    <div class="page_content-data position-absolute">
+      <div class="heading">
+        Breakfast
+      </div>
+    </div>
+    <div class="row mt-5">
+     <div class="col-md-4 md-3" *ngFor="let x of breakfast">
+        <div class="card text-center">
+          <div class="card-title text-center" style="color:#ff1a1a; font-weight:bold">
+             {{x.name}}
+            </div>
+           <div class="card-body">
+            <img src="{{x.imageUrl}}" class="card-img">
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- For Pizzas -->
+<div class="page_content shadow p-3 position-relative">
+  <div class="page_content-data position-absolute">
+    <div class="heading">
+      Pizzas
+    </div>
+  </div>
+  <div class="row mt-5">
+   <div class="col-md-4 md-3" *ngFor="let x of pizza">
+      <div class="card text-center">
+        <div class="card-body">
+          <img src="{{x.url}}" class="card-img">
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>

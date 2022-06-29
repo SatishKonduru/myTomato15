@@ -1,0 +1,14 @@
+<mat-nav-list>
+  <div class="logo py-4">
+    <img src="../../../assets/logo.svg">
+  </div>
+  <mat-divider></mat-divider>
+  <h2>Tomato</h2>
+  <mat-divider></mat-divider>
+  <div fxFlex="10">
+  <a mat-list-item [routerLink]="'/home'"
+  routerLinkActive="list-item-active"><mat-icon>home</mat-icon>Home</a>
+  </div>
+  <a mat-list-item [routerLink]="'/breakfast'"
+  routerLinkActive="list-item-active"><mat-icon>dinner_dining</mat-icon>Breakfast</a>
+</mat-nav-list>

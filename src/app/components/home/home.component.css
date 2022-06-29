@@ -1,0 +1,72 @@
+.page{
+  color: #fff;
+  padding: 0 1rem;
+  background: #f1f5f9;
+}
+.page .page_box{
+  min-height: 120px;
+  background: #ff1a1a;
+  margin: 0 -1rem;
+  font-size: 10px;
+
+}
+.page .page_content{
+  /* min-height: calc(100vh - 178px); */
+  min-height: calc(100vh - 150px);
+  border-radius: 10px;
+  margin-top: -2rem;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+}
+ .page_content-data  {
+  top: 2%;
+  left: 45%;
+}
+.page_content-data .heading {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #ff1a1a;
+  text-decoration: underline;
+
+}
+.card{
+
+margin: 10px;
+
+}
+.card-img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  }
+
+img:hover{
+  cursor: pointer;
+  transform: scale(1.2)
+}
+img{
+  transition: transform 300ms ease-in-out 25ms;
+}
+
+.mySearch{
+  margin-top: -5px;
+}
+.mySearchFormField{
+
+  width: 250px;
+  padding: 5px 10px;
+  height: 70px !important;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px ;
+
+}
+
+mat-label{
+  color: #fff;
+  font-size: 14px;
+}
+

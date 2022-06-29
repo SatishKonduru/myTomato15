@@ -1,0 +1,39 @@
+[
+       {
+          "name": "Idly",
+          "url": "../../assets/img/Breakfast/01.jpg"
+        },
+        {
+          "name": "Dosa",
+          "url": "../../assets/img/Breakfast/02.jpg"
+        },
+        {
+          "name": "Vada",
+          "url": "../../assets/img/Breakfast/03.jpg"
+        },
+        {
+          "name": "Upma",
+          "url": "../../assets/img/Breakfast/04.jpg"
+        },
+        {
+          "name": "Poori",
+          "url": "../../assets/img/Breakfast/05.jpg"
+        },
+        {
+          "name": "Set Dosa",
+          "url": "../../assets/img/Breakfast/06.jpg"
+        },
+        {
+          "name": "Pongal",
+          "url": "../../assets/img/Breakfast/07.jpg"
+        },
+        {
+          "name": "Uggani Bajji",
+          "url": "../../assets/img/Breakfast/08.jpg"
+        },
+        {
+          "name": "Bread Omelette",
+          "url": "../../assets/img/Breakfast/09.jpg"
+        }
+
+]

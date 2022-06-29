@@ -1,0 +1,47 @@
+@import '../home/home.component.css';
+.mat-my-primary{
+  background-color: #ff1a1a;
+  box-shadow: 10px 5px 15px #000;
+  color: #fff;
+}
+.container{
+  display: flex;
+  align-items: left;
+  margin-top: 5rem;
+  margin-left: -300px;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 50rem;
+}
+img{
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 300px !important;
+  box-shadow: 10px 5px 15px #000;
+  object-fit: cover;
+}
+.details{
+  flex: 1 0 ;
+}
+.name, .star, .cookTime, .price, button{
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.header .name {
+  font-size: 40px;
+  color: #ff1a1a;
+  text-transform: uppercase;
+}
+.price {
+  font-size: 25px;
+  color: #012f01;
+
+}
+
+
+
+
+

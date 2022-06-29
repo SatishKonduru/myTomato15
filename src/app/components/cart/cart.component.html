@@ -1,0 +1,23 @@
+<div class="container-fluid page">
+
+  <div class="d-flex page_box p-3 mt-2">
+    <h1>Cart</h1>
+  </div>
+  <div class="page_content shadow p-3 position-relative">
+    <div class="page_content-data position-absolute">
+      {{cart.items | json}}
+     <ul>
+      <li *ngFor="let cartItems of cart.items">
+       {{cartItems.quantity}}
+        <span *ngFor="let item of cartItems.food">
+          {{item.name}}
+          <img src="{{item.imageUrl}}">
+        </span>
+      </li>
+     </ul>
+    </div>
+
+  </div>
+
+</div>
+

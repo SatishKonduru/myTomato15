@@ -1,0 +1,101 @@
+[
+  {
+    "id" : 1,
+    "name": "Idly",
+    "price" : 25,
+    "cookTime" : "10-20",
+    "favorite": true,
+    "origins" : ["India", "USA"],
+    "stars" : 3.5,
+    "imageUrl": "../../assets/img/Breakfast/01.jpg",
+    "tags" : ["tiffin", "breakfast", "light Food"]
+  },
+  {
+    "id" : 2,
+    "name": "Dosa",
+    "price" : 30,
+    "cookTime" : "5-10",
+    "favorite": false,
+    "origins" : ["India", "USA"],
+    "stars" : 4,
+    "imageUrl": "../../assets/img/Breakfast/02.jpg",
+    "tags" : ["tiffin", "breakfast", "masala", "onion dosa"]
+  },
+  {
+    "id" : 3,
+    "name": "Vada",
+    "price" : 25,
+    "cookTime" : "10-20",
+    "favorite": false,
+    "origins" : ["India", "USA"],
+    "stars" : 4.5,
+    "imageUrl": "../../assets/img/Breakfast/03.jpg",
+    "tags" : ["tiffin", "breakfast"]
+  },
+  {
+    "id" : 4,
+    "name": "Upma",
+    "price" : 40,
+    "cookTime" : "10-20",
+    "favorite": true,
+    "origins" : ["India", "USA"],
+    "stars" : 2.5,
+    "imageUrl": "../../assets/img/Breakfast/04.jpg",
+    "tags" : ["tiffin", "breakfast", "light Food"]
+  },
+  {
+    "id" : 5,
+    "name": "Poori",
+    "price" : 40,
+    "cookTime" : "15-20",
+    "favorite": false,
+    "origins" : ["India", "USA", "Italy"],
+    "stars" : 3.5,
+    "imageUrl": "../../assets/img/Breakfast/05.jpg",
+    "tags" : ["tiffin", "breakfast"]
+  },
+  {
+    "id" : 6,
+    "name": "Set Dosa",
+    "price" : 50,
+    "cookTime" : "10-20",
+    "favorite": false,
+    "origins" : ["India", "USA"],
+    "stars" : 2.5,
+    "imageUrl": "../../assets/img/Breakfast/06.jpg",
+    "tags" : ["tiffin", "breakfast"]
+  },
+  {
+    "id" : 7,
+    "name": "Pongal",
+    "price" : 40,
+    "cookTime" : "15-20",
+    "favorite": true,
+    "origins" : ["India", "USA", "China"],
+    "stars" : 4.5,
+    "imageUrl": "../../assets/img/Breakfast/07.jpg",
+    "tags" : ["tiffin", "breakfast", "light Food"]
+  },
+  {
+    "id" : 8,
+    "name": "Uggani Bajji",
+    "price" : 25,
+    "cookTime" : "5-10",
+    "favorite": true,
+    "origins" : ["India", "Andhra Pradesh"],
+    "stars" : 5,
+    "imageUrl": "../../assets/img/Breakfast/08.jpg",
+    "tags" : ["tiffin", "breakfast", "Heavy Food"]
+  },
+  {
+    "id" : 9,
+    "name": "Bread Omelette",
+    "price" : 50,
+    "cookTime" : "10-20",
+    "favorite": false,
+    "origins" : ["India", "USA"],
+    "stars" : 4.5,
+    "imageUrl": "../../assets/img/Breakfast/09.jpg",
+    "tags" : ["tiffin", "breakfast", "light Food"]
+  }
+]

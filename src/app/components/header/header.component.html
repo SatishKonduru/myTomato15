@@ -1,0 +1,41 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+
+      <button mat-icon-button (click)="toggleSidebar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="col-md-7 text-center ">
+      <h2>Tomato</h2>
+     </div>
+    <div class="col-md-5 justify-content-end " style="margin-left: 200px;">
+      <a mat-button [routerLink]="'/login'"
+      *ngIf="!authService.isLoggedIn()"
+      >
+      Login</a>
+      <a mat-button [routerLink]="'/register'"
+      *ngIf="!authService.isLoggedIn()"
+      >Register</a>
+      <a mat-button [matMenuTriggerFor]="menu" *ngIf="authService.isLoggedIn()">
+            <img src="../../../assets/user.jpg"
+            class="user-image mr-1 p-2"> {{authService.currentUser}}
+            <mat-icon class="user-image-icon">keyboard_arrow_down</mat-icon>
+      </a>
+            <mat-menu #menu >
+              <button mat-menu-item (click)="authService.logout()">
+                <mat-icon>exit_to_app</mat-icon>Logout
+              </button>
+
+            </mat-menu>
+
+      <button mat-button [routerLink]="'/cart'">
+        <mat-icon>add_shopping_cart</mat-icon>
+        <span matBadge="7"
+              matBadgeOverlap="false"
+              matBadgePosition="above after"
+              matBadgeSize="medium"
+              matBadgeColor="accent"></span>
+      </button>
+ </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>

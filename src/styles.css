@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.notificationSuccess{
+  background-color: #ff1a1a;
+  color: #fff;
+  font-size: 18px !important;
+}
+.notificationSuccess button{
+  background-color: #ff1a1a;
+  color: #fff;
+  font-size: 18px !important;
+}
+
+.notificationFailure{
+  background-color: #000 ;
+  color: #fff;
+  font-size: 18px !important;
+}
+.notificationFailure button{
+  background-color: #ff1a1a;
+  color: #fff;
+  font-size: 18px !important;
+}
+
+
