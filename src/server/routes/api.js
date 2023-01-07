@@ -8,7 +8,7 @@ const db = "mongodb+srv://Tomato:Tomato@cluster0.giyofje.mongodb.net/?retryWrite
 router.get('/',(req,res)=>{res.send("This Msg from Routes")})
 mongoose.connect(db, err=> {
   if(err){
-    console.log(err)
+    console.log(err) 
   }
   else{
     console.log("Connection Success!!!")
