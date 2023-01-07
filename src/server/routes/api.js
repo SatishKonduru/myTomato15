@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const User = require('../models/user')
 const jwt = require('jsonwebtoken')
 const { onErrorResumeNext } = require('rxjs')
-const db = "mongodb+srv://Tomato:Tomato@cluster0.giyofje.mongodb.net/Tomato?retryWrites=true&w=majority"
+const db = "mongodb+srv://Tomato:Tomato@cluster0.giyofje.mongodb.net/?retryWrites=true&w=majority"
 router.get('/',(req,res)=>{res.send("This Msg from Routes")})
 mongoose.connect(db, err=> {
   if(err){
